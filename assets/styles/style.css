@@ -1,0 +1,222 @@
+:root {
+	--contrast-color: #f95522;
+	--background-color: #242424;
+	--main-color-blend: #AC4323;
+	--background-color-text: #ffffff;
+}
+
+body {
+	font-family: sans-serif;
+	margin: 0;
+	background-color: var(--background-color);
+	color: var(--contrast-color);
+}
+
+hr {
+	color: var(--contrast-color);
+	border-color: var(--contrast-color);
+	background-color: var(--contrast-color);
+}
+
+input[type="button"] {
+	border: none;
+	color: var(--background-color-text);
+	background-color: var(--contrast-color);
+	text-decoration: none;
+	cursor: pointer;
+	margin: 4px 2px;
+	padding: 16px 32px;
+	font-size: 16px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+input[type="button"]:hover{
+	background-color: var(--main-color-blend);
+}
+
+#contactForm {
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 12px;
+
+}
+
+#contactForm input, 
+#contactForm textarea {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	width: 100%;
+	padding: 10px;
+	font: 95% sans-serif;
+	display: block;
+}
+
+#contactForm input:focus {
+	box-shadow: 0 0 5px var(--contrast-color);
+	border: 1px solid var(--contrast-color);
+}
+
+#contactForm textarea {
+	height: 150px;
+}
+
+#contactForm input[type="submit"] {
+	position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: var(--background-color-text);
+    margin: 0 auto;
+    background: var(--contrast-color);
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 50%;
+    border: 1px solid var(--main-color-blend);
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+
+#contactForm input[type="submit"]:hover {
+    background: var(--main-color-blend);
+}
+
+#header {
+	background-color: var(--background-color);
+	color: var(--contrast-color);
+	text-align: center;
+	line-height: 1.6em;
+}
+
+#navbar {
+	background-color: var(--contrast-color);
+}
+
+#navbar ul {
+	list-style: none;
+	text-align: center;
+}
+
+#navbar ul li {
+	display: inline;
+	padding: 20px;
+}
+
+#navbar ul li:hover {
+	background-color: var(--main-color-blend);
+}
+
+#navbar a {
+	text-decoration: none;
+	color: var(--background-color-text);
+}
+
+.container {
+	overflow: hidden;
+	margin: auto;
+	width: 80%;
+}
+
+#showcase {
+	color: var(--background-color-text);
+	background-image: url("../../assets/images/showcase.jpg");
+	background-size: 2160px;
+	background-position: center -50px;
+	height:600px;
+	text-align: center;
+}
+
+#showcase h1 {
+	padding-top: 200px;
+}
+
+#main {
+	width: 70%;
+	float: left;
+	padding-bottom: 25px;
+	box-sizing: border-box;
+	padding-right: 15px;
+}
+
+#sidebar {
+	width: 30%;
+	float: right;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+#footer {
+	text-align: center;
+}
+
+@media(max-width: 600px){
+	#main{
+		width:100%;
+		float:none;
+	}
+
+	#sidebar{
+		width:100%;
+		float:none;
+	}
+}
+
+.productTable {
+	border-collapse: collapse;
+}
+
+.productTable tr {
+	border-bottom: 1px solid var(--contrast-color);
+}
+
+.productTable tr:last-child {
+	border-bottom: 0px;
+}
+
+.productTable td {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.productPicture img {
+	width: 200px;
+	padding-right: 50px;
+}
+
+.productDetails {
+	box-sizing: border-box;
+	padding-right: 30px;
+}
+
+.productDetails h1 {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.productDetails h3 {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.productPurchasing {
+	text-align: left;
+	padding-left: 30px;
+	box-sizing: border-box;
+}
+
+#contactShowcase {
+	background-image: url("../../assets/images/contactShowcase.jpg");
+	background-size: 2160px;
+	background-position: center -50px;
+	height: 600px;
+	text-align: center;
+}
+
