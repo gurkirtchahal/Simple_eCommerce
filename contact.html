@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+	<script type="text/javascript" src="forms.js"></script>
 	<title>Odin Contact Us</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
 	</div>
 	<div class="container">
 		<div id="contactForm">
-			<form>
+			<form onsubmit="return submitContact()">
 				<div class="nameInput">
 					<label for="firstName">First Name:</label>
 					<input type="text" name="firstName" id="firstName" placeholder="First Name">
@@ -37,6 +38,7 @@
 			</form>
 		</div>
 	</div>
+	<p id="wrongInput"></p>
 	<script src="footer.js"></script>
 </body>
 </html>
