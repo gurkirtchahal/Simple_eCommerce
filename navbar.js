@@ -1,3 +1,12 @@
+function getSyncScriptParams() {
+         var scripts = document.getElementsByTagName('script');
+         var lastScript = scripts[scripts.length-1];
+         var scriptName = lastScript;
+         return scriptName.getAttribute('directory');
+}
+
+var dir = getSyncScriptParams();
+
 document.write('\
 	<div id="header">\
 		<div class="container">\
@@ -8,9 +17,9 @@ document.write('\
 	<nav id="navbar">\
 		<div class="container">\
 			<ul>\
-				<a href="index.html"><li>Home</li></a>\
-				<a href="products.html"><li>Products</li></a>\
-				<a href="contact.html"><li>Contact Us</li></a>\
+				<a href="' + dir + 'index.html"><li>Home</li></a>\
+				<a href="' + dir + 'products.html"><li>Products</li></a>\
+				<a href="' + dir + 'contact.html"><li>Contact Us</li></a>\
 			</ul>\
 		</div>\
 	</nav>\

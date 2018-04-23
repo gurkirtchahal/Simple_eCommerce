@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../assets/styles/style.css">
+	<script type="text/javascript" src="../forms.js"></script>
+	<title id="title">Odin</title>
+</head>
+<body>
+	<script src="../navbar.js" directory='../'></script>
+	<div class="container">
+		<div class="productImage">
+			<img src="../assets/images/ACOrigins.jpg">
+		</div>
+		<div class="buyingInfo">
+			<div class="productInformation">
+				<h1 id="price">$29.99</h1>
+				<h1>AC Origins</h1>
+				<h3>By Ubisoft</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div id="contactForm">
+				<form onsubmit="return submitPurchase()">
+					<div class="nameInput">
+						<label for="firstName">First Name:</label>
+						<input type="text" name="firstName" id="firstName" placeholder="First Name">
+
+						<label for="lastName">Last Name:</label>
+						<input type="text" name="lastName" id="lastName" placeholder="Last Name">
+					</div>
+					<div>
+						<label for="email">Email:</label>
+						<input type="email" name="email" id="email" placeholder="Email">
+					</div>
+					<div>
+						<label for="phone">Phone Number:</label>
+						<input type="text" name="subject" id="phone" placeholder="Phone Number">
+					</div>
+					<div>
+						<label for="shipAddress">Shipping Address:</label>
+						<input name="text" id="shipAddress" placeholder="Shipping Address"></input>
+					</div>
+					<div id="addressBlock">
+						<ul>
+							<li>
+								<input name="text" id="shipCity" placeholder="City"></input>
+							</li>
+							<li>
+								<input name="text" id="shipState" placeholder="State (XX)"></input>
+							</li>
+							<li>
+								<input name="text" id="shipZip" placeholder="Zip (XXXXX)"></input>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<label for="shipType">Ship Type:</label>
+						<br />
+						<br />	
+						<input type="radio" name="shipType" id="shipType1" value="1day"> Overnight<br>
+	  					<input type="radio" name="shipType" id="shipType2" value="2day"> 2 Day Shipping<br>
+						<input type="radio" name="shipType" id="shipType3" value="6day"> 6 Day Shipping<br>
+					</div>
+					<div>
+						<label for="quantity">Quantity:</label>
+						<input name="text" id="quantity" placeholder="Quantity"></input>
+					</div>
+					<div>
+						<label for="creditName">Cardholder:</label>
+						<input type="text" id="creditName" placeholder="Cardholder">
+					</div>
+					<div>
+						<label for="credit">Credit Card Number:</label>
+						<input name="text" id="credit" placeholder="Credit Card"></input>
+					</div>
+					<div>
+						<label for="cvv">CVV:</label>
+						<input name="text" id="cvv" placeholder="XXX"></input>
+					</div>
+					<div>
+						<label for="expiration">Expiration Date:</label>
+						<input name="text" id="expiration" placeholder="MM/YY"></input>
+					</div>
+					<div>
+						<label for="billAddress">Billing Address:</label>
+						<input name="text" id="billAddress" placeholder="Billing Address"></input>
+					</div>
+					<div id="addressBlock">
+						<ul>
+							<li>
+								<input name="text" id="billCity" placeholder="City"></input>
+							</li>
+							<li>
+								<input name="text" id="billState" placeholder="State (XX)"></input>
+							</li>
+							<li>
+								<input name="text" id="billZip" placeholder="Zip (XXXXX)"></input>
+							</li>
+						</ul>
+					</div>
+			<input type="submit" name="submit">
+			</form>
+			</div>
+		</div>
+	</div>
+	<p id="wrongInput"></p>
+	<p id="rightInput"></p>
+	<script src="../footer.js"></script>
+</body>
+</html>

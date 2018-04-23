@@ -3,6 +3,8 @@
 	--background-color: #242424;
 	--main-color-blend: #AC4323;
 	--background-color-text: #ffffff;
+	--zoom-scale-product: scale(1.1);
+	--zoom-scale-image: scale(1.3);
 }
 
 body {
@@ -58,6 +60,31 @@ input[type="button"]:hover{
 	padding: 10px;
 	font: 95% sans-serif;
 	display: block;
+}
+
+#contactForm input[type="radio"] {
+	width: auto;
+	display: inline;
+}
+
+#contactForm input[id="shipCity"],
+#contactForm input[id="shipState"],
+#contactForm input[id="shipZip"],
+#contactForm input[id="billCity"],
+#contactForm input[id="billState"],
+#contactForm input[id="billZip"] {
+	width: 32%;
+	display: inline;
+	margin-left: 2px;
+}
+
+#addressBlock ul {
+	list-style: none;
+	padding: 0px;
+}
+
+#addressBlock ul li {
+	display: inline;
 }
 
 #contactForm input:focus {
@@ -163,6 +190,16 @@ input[type="button"]:hover{
 		float:none;
 	}
 
+	.productImage {
+		width: 100%;
+		float: none;
+	}
+
+	.productInformation {
+		width: 100%;
+		float: none;
+	}
+
 	#sidebar{
 		width:100%;
 		float:none;
@@ -188,7 +225,15 @@ input[type="button"]:hover{
 
 .productPicture img {
 	width: 200px;
-	padding-right: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	transition: transform .2s;
+}
+
+.productPicture img:hover {
+	-ms-transform: var(--zoom-scale-product);
+    -webkit-transform: var(--zoom-scale-product);
+    transform: var(--zoom-scale-product);
 }
 
 .productDetails {
@@ -218,5 +263,72 @@ input[type="button"]:hover{
 	background-position: center -50px;
 	height: 600px;
 	text-align: center;
+}
+
+#wrongInput {
+	width: 60%;
+	margin: auto;
+	overflow: hidden;
+	font-size: 18px;
+	color: #ff0000;
+}
+
+#rightInput {
+	width: 60%;
+	margin: auto;
+	overflow: hidden;
+	font-size: 18px;
+	color: #00ff00;
+}
+
+.productImage {
+	width: 30%;
+	float: left;
+	margin: 100px;
+	box-sizing: border-box;
+}
+
+.productImage img {
+	height: 600px;
+	transition: transform .2s;
+}
+
+.productImage img:hover {
+	-ms-transform: var(--zoom-scale-image);
+    -webkit-transform: var(--zoom-scale-image);
+    transform: var(--zoom-scale-image);
+}
+
+.buyingInfo {
+	width: 40%;
+	float: right;
+	box-sizing: border-box;
+}
+
+.productInformation h1[id="price"] {
+	text-align: right;
+	float: right;
+}
+
+@media(max-width: 1300px){
+
+	.productImage {
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+	}
+
+	.productImage img{
+		width: 100%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	.buyingInfo {
+		width: 100%;
+		float: none;
+	}
 }
 
